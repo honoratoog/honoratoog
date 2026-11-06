@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.svg" width="100%" alt="Banner High-Tech Lucas Honorato" />
+  <img src="https://raw.githubusercontent.com/honoratoog/honoratoog/main/assets/banner.svg" width="100%" alt="Banner High-Tech Lucas Honorato" />
 </div>
 
 <br />
@@ -42,8 +42,8 @@ Engenheiro de Software em formação e profissional de operações de infraestru
 ### 📊 Telemetria & Status do Sistema
 
 <div align="center">
-  <img height="165em" src="https://github-readme-stats.vercel.app/api?username=honoratoog&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&bg_color=060911&title_color=00f3ff&icon_color=bd00ff&border_color=00f3ff44&hide_border=false"/>
-  <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=honoratoog&layout=compact&langs_count=6&theme=tokyonight&bg_color=060911&title_color=00f3ff&border_color=00f3ff44&hide_border=false"/>
+  <img height="170em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=honoratoog&theme=tokyonight" alt="Stats" />
+  <img height="170em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=honoratoog&theme=tokyonight" alt="Top Langs" />
 </div>
 
 <div align="center">
