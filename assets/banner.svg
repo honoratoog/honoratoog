@@ -1,105 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 250" width="100%" height="250">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 250" width="850" height="250">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b1120" />
-      <stop offset="50%" stop-color="#090d16" />
-      <stop offset="100%" stop-color="#05070c" />
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#05070c"/>
     </linearGradient>
-
     <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f3ff" />
-      <stop offset="100%" stop-color="#bd00ff" />
+      <stop offset="0%" stop-color="#00f3ff"/>
+      <stop offset="100%" stop-color="#bd00ff"/>
     </linearGradient>
-
     <linearGradient id="scan" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0" />
-      <stop offset="50%" stop-color="#00f3ff" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0" />
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f3ff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0"/>
     </linearGradient>
-
     <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#00f3ff" stroke-width="0.6" stroke-opacity="0.07" />
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#00f3ff" stroke-width="0.6" stroke-opacity="0.08"/>
     </pattern>
-
-    <clipPath id="cardClip">
-      <rect x="2" y="2" width="846" height="246" rx="14" />
-    </clipPath>
   </defs>
 
-  <style>
-    .title { font: 800 38px 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; fill: #ffffff; letter-spacing: 0.5px; }
-    .sub { font: 500 15px 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; fill: #cbd5e1; }
-    .badge { font: 700 11px 'Courier New', Courier, monospace; fill: #00f3ff; letter-spacing: 2px; }
-    .handle { font: 600 14px 'Courier New', Courier, monospace; fill: #64748b; }
-    .term-cmd { font: 600 12px 'Courier New', Courier, monospace; fill: #e2e8f0; }
-    .term-sub { font: 400 11.5px 'Courier New', Courier, monospace; fill: #64748b; }
-    .term-ok { font: 600 12px 'Courier New', Courier, monospace; fill: #10b981; }
-    .term-info { font: 600 12px 'Courier New', Courier, monospace; fill: #00f3ff; }
+  <rect x="2" y="2" width="846" height="246" rx="14" fill="url(#bg)" stroke="#00f3ff" stroke-opacity="0.35" stroke-width="1.5"/>
+  <rect x="2" y="2" width="846" height="246" rx="14" fill="url(#grid)"/>
 
-    .scanline { animation: moveScan 6s linear infinite; }
-    .bar-anim { animation: pulseBar 2.5s ease-in-out infinite alternate; }
-    .cursor { animation: blink 1s step-end infinite; }
-    .dot-pulse { animation: blink 2s ease-in-out infinite; }
+  <rect x="2" y="-80" width="846" height="80" fill="url(#scan)">
+    <animate attributeName="y" from="-80" to="250" dur="5s" repeatCount="indefinite"/>
+  </rect>
 
-    @keyframes moveScan {
-      0% { transform: translateY(-90px); }
-      100% { transform: translateY(260px); }
-    }
-    @keyframes pulseBar {
-      0% { width: 115px; opacity: 0.85; }
-      100% { width: 185px; opacity: 1; }
-    }
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-  </style>
+  <rect x="44" y="42" width="172" height="22" rx="4" fill="#00f3ff" fill-opacity="0.1" stroke="#00f3ff" stroke-width="0.8"/>
+  <circle cx="56" cy="53" r="3.5" fill="#00f3ff">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="66" y="57" fill="#00f3ff" font-family="monospace" font-size="11" font-weight="bold" letter-spacing="1.5">SYS.ONLINE // LVL 22</text>
 
-  <g clip-path="url(#cardClip)">
-    <!-- Fundo e Grid -->
-    <rect x="2" y="2" width="846" height="246" rx="14" fill="url(#bg)" />
-    <rect x="2" y="2" width="846" height="246" fill="url(#grid)" />
+  <text x="44" y="106" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="38" font-weight="800">Lucas Honorato</text>
+  
+  <rect x="44" y="120" width="145" height="4" rx="2" fill="url(#accent)">
+    <animate attributeName="width" values="110;185;110" dur="4s" repeatCount="indefinite"/>
+  </rect>
 
-    <!-- Glow decorativo -->
-    <circle cx="140" cy="125" r="160" fill="#00f3ff" fill-opacity="0.04" />
-    <circle cx="700" cy="125" r="160" fill="#bd00ff" fill-opacity="0.05" />
+  <text x="44" y="152" fill="#cbd5e1" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="500">Software Engineering · Full-Stack · IoT &amp; Infra</text>
+  <text x="44" y="182" fill="#64748b" font-family="monospace" font-size="14" font-weight="600">@honoratoog</text>
 
-    <!-- Scanline Animada -->
-    <rect class="scanline" x="0" y="0" width="850" height="80" fill="url(#scan)" />
-  </g>
-
-  <!-- Borda HUD Externa -->
-  <rect x="2" y="2" width="846" height="246" rx="14" fill="none" stroke="#00f3ff" stroke-opacity="0.3" stroke-width="1.5" />
-
-  <!-- Coluna Esquerda: Identidade -->
-  <rect x="44" y="42" width="168" height="22" rx="4" fill="#00f3ff" fill-opacity="0.1" stroke="#00f3ff" stroke-width="0.8" />
-  <circle class="dot-pulse" cx="56" cy="53" r="3.5" fill="#00f3ff" />
-  <text x="66" y="57" class="badge">SYS.ONLINE // LVL 22</text>
-
-  <text x="44" y="106" class="title">Lucas Honorato</text>
-  <rect class="bar-anim" x="44" y="120" width="145" height="4" rx="2" fill="url(#accent)" />
-
-  <text x="44" y="152" class="sub">Software Engineering · Full-Stack · IoT & Infra</text>
-  <text x="44" y="182" class="handle">@honoratoog</text>
-
-  <!-- Coluna Direita: Terminal High-Tech -->
   <g transform="translate(485, 36)">
-    <rect x="0" y="0" width="325" height="178" rx="10" fill="#060911" fill-opacity="0.92" stroke="#1e293b" stroke-width="1.5" />
-    <rect x="0" y="0" width="4" height="178" rx="2" fill="url(#accent)" />
+    <rect x="0" y="0" width="325" height="178" rx="10" fill="#060911" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="0" y="0" width="4" height="178" rx="2" fill="url(#accent)"/>
 
-    <!-- Botões da Janela -->
-    <circle cx="20" cy="18" r="5" fill="#ef4444" />
-    <circle cx="36" cy="18" r="5" fill="#f59e0b" />
-    <circle cx="52" cy="18" r="5" fill="#10b981" />
+    <circle cx="20" cy="18" r="5" fill="#ef4444"/>
+    <circle cx="36" cy="18" r="5" fill="#f59e0b"/>
+    <circle cx="52" cy="18" r="5" fill="#10b981"/>
 
-    <!-- Comandos do Terminal -->
-    <text x="18" y="48" class="term-cmd">$ npm run check</text>
-    <text x="18" y="65" class="term-sub">next build · tsc · prisma · eslint</text>
-    <text x="18" y="83" class="term-ok">✔ all checks passed</text>
+    <text x="18" y="48" fill="#e2e8f0" font-family="monospace" font-size="12" font-weight="bold">$ npm run check</text>
+    <text x="18" y="65" fill="#64748b" font-family="monospace" font-size="11.5">next build · tsc · prisma · eslint</text>
+    <text x="18" y="83" fill="#10b981" font-family="monospace" font-size="12" font-weight="bold">✔ all checks passed</text>
 
-    <text x="18" y="112" class="term-cmd">$ mqtt connect wss://esp32-node</text>
-    <text x="18" y="130" class="term-info">⚡ telemetry & sensors online</text>
+    <text x="18" y="112" fill="#e2e8f0" font-family="monospace" font-size="12" font-weight="bold">$ mqtt connect wss://esp32-node</text>
+    <text x="18" y="130" fill="#00f3ff" font-family="monospace" font-size="12" font-weight="bold">⚡ telemetry &amp; sensors online</text>
 
-    <text x="18" y="158" class="term-ok">✔ bgp links & vms operational <tspan class="cursor" fill="#00f3ff">_</tspan></text>
+    <text x="18" y="158" fill="#10b981" font-family="monospace" font-size="12" font-weight="bold">✔ bgp links &amp; vms operational</text>
+    <rect x="232" y="147" width="7" height="13" fill="#00f3ff">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
   </g>
 </svg>

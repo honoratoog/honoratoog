@@ -1,8 +1,4 @@
-<div align="center">
-  <img src="https://raw.githubusercontent.com/honoratoog/honoratoog/main/assets/banner.svg" width="100%" alt="Banner High-Tech Lucas Honorato" />
-</div>
-
-<br />
+[![Banner High-Tech Lucas Honorato](./assets/banner.svg)](https://github.com/honoratoog)
 
 <div align="center">
   <a href="https://git.io/typing-svg">
